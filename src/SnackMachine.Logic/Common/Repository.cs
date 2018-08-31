@@ -1,4 +1,6 @@
-﻿namespace SnackMachine.Logic
+﻿using DDDInPractice.Logic.Utils;
+
+namespace DDDInPractice.Logic.Common
 {
     public abstract class Repository<T>
         where T : AggregateRoot

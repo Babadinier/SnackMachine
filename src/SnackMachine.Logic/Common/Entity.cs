@@ -1,7 +1,7 @@
 ﻿using System;
 using NHibernate.Proxy;
 
-namespace SnackMachine.Logic
+namespace DDDInPractice.Logic.Common
 {
     public abstract class Entity
     {

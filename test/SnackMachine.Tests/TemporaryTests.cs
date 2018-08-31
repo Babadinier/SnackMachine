@@ -1,8 +1,10 @@
 ﻿using System.Configuration;
-using SnackMachine.Logic;
+using DDDInPractice.Logic.SharedKernel;
+using DDDInPractice.Logic.SnackMachine;
+using DDDInPractice.Logic.Utils;
 using Xunit;
 
-namespace SnackMachine.Tests
+namespace DDDInPractice.Tests
 {
     public class TemporaryTests
     {

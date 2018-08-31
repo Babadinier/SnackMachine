@@ -1,4 +1,4 @@
-﻿namespace SnackMachine.UI.Common
+﻿namespace DDDInPractice.UI.Common
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

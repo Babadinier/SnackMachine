@@ -1,4 +1,6 @@
-﻿namespace SnackMachine.UI.Common
+﻿using DDDInPractice.UI.Common;
+
+namespace SnackMachine.UI.Common
 {
     /// <summary>
     /// Interaction logic for CustomWindow.xaml

@@ -1,4 +1,6 @@
-﻿namespace SnackMachine.Logic
+﻿using DDDInPractice.Logic.Common;
+
+namespace DDDInPractice.Logic.SnackMachine
 {
     public class Snack : AggregateRoot
     {

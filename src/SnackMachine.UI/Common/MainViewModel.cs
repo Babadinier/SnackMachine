@@ -1,7 +1,7 @@
-﻿using SnackMachine.Logic;
-using SnackMachineLogic = SnackMachine.Logic.SnackMachine;
+﻿using DDDInPractice.Logic.SnackMachine;
+using DDDInPractice.UI.SnackMachine;
 
-namespace SnackMachine.UI.Common
+namespace DDDInPractice.UI.Common
 {
     public class MainViewModel : ViewModel
     {

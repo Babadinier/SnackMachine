@@ -1,6 +1,7 @@
-﻿using SnackMachine.UI.Common;
+﻿using DDDInPractice.UI.Common;
+using SnackMachine.UI.Common;
 
-namespace SnackMachine.UI.Utils
+namespace DDDInPractice.UI.Utils
 {
     public class DialogService
     {

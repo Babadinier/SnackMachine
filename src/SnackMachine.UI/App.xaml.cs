@@ -1,5 +1,5 @@
 ﻿using System.Configuration;
-using SnackMachine.Logic;
+using DDDInPractice.Logic.Utils;
 
 namespace SnackMachine.UI
 {

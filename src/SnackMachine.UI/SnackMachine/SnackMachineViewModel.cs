@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using SnackMachine.Logic;
-using SnackMachine.UI.Common;
-using SnackMachineLogic = SnackMachine.Logic.SnackMachine;
+using DDDInPractice.Logic.SharedKernel;
+using DDDInPractice.Logic.SnackMachine;
+using DDDInPractice.UI.Common;
+using SnackMachineLogic = DDDInPractice.Logic.SnackMachine.SnackMachine;
 
-namespace SnackMachine.UI
+namespace DDDInPractice.UI.SnackMachine
 {
     public class SnackMachineViewModel : ViewModel
     {
@@ -38,7 +38,7 @@ namespace SnackMachine.UI
         public Command ReturnMoneyCommand { get; private set; }
         public Command<string> BuySnackCommand { get; private set; }
 
-        public SnackMachineViewModel(Logic.SnackMachine snackMachine)
+        public SnackMachineViewModel(SnackMachineLogic snackMachine)
         {
             _snackMachine = snackMachine;
             _repository = new SnackMachineRepository();

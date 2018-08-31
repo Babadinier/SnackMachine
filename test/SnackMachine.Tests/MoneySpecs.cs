@@ -1,9 +1,9 @@
 ﻿using System;
+using DDDInPractice.Logic.SharedKernel;
 using FluentAssertions;
-using SnackMachine.Logic;
 using Xunit;
 
-namespace SnackMachine.Tests
+namespace DDDInPractice.Tests
 {
     public class MoneySpecs
     {

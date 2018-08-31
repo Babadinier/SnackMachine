@@ -1,9 +1,9 @@
 ﻿using FluentNHibernate;
 using FluentNHibernate.Mapping;
 
-namespace SnackMachine.Logic
+namespace DDDInPractice.Logic.SnackMachine
 {
-    public class SnackMachineMap : ClassMap<SnackMachine>
+    public class SnackMachineMap : ClassMap<DDDInPractice.Logic.SnackMachine.SnackMachine>
     {
         public SnackMachineMap()
         {
@@ -19,7 +19,7 @@ namespace SnackMachine.Logic
                 y.Map(x => x.TwentyDollarCount);
             });
 
-            HasMany<Slot>(Reveal.Member<SnackMachine>("Slots")).Cascade.SaveUpdate().Not.LazyLoad();
+            HasMany<Slot>(Reveal.Member<DDDInPractice.Logic.SnackMachine.SnackMachine>("Slots")).Cascade.SaveUpdate().Not.LazyLoad();
         }
     }
 }

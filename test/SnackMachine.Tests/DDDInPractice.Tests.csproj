@@ -7,8 +7,8 @@
     <ProjectGuid>{6917865F-E8F6-44F1-B48A-9A3F18FB8094}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SnackMachine.Tests</RootNamespace>
-    <AssemblyName>SnackMachine.Tests</AssemblyName>
+    <RootNamespace>DDDInPractice.Tests</RootNamespace>
+    <AssemblyName>DDDInPractice.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -99,9 +99,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SnackMachine.Logic\SnackMachine.Logic.csproj">
+    <ProjectReference Include="..\..\src\SnackMachine.Logic\DDDInPractice.Logic.csproj">
       <Project>{9F4C547F-A8DB-4DB4-A9D2-0BCDEA14D936}</Project>
-      <Name>SnackMachine.Logic</Name>
+      <Name>DDDInPractice.Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SnackMachine.UI.Common"
-        local:DialogCloser.DialogResult="{Binding Path=DialogResult}"
+        xmlns:common="clr-namespace:DDDInPractice.UI.Common"
+        common:DialogCloser.DialogResult="{Binding Path=DialogResult}"
         mc:Ignorable="d"
         Title="{Binding Path=Caption}" Height="700" Width="800">
     <Grid>
         <Grid.Resources>
-            <local:MainDataTemplateSelector x:Key="Selector" />
+            <common:MainDataTemplateSelector x:Key="Selector" />
         </Grid.Resources>
         <ContentPresenter ContentTemplateSelector="{StaticResource Selector}" Content="{Binding}"></ContentPresenter>
     </Grid>

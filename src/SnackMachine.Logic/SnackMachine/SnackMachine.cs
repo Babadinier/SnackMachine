@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using static SnackMachine.Logic.Money;
+using DDDInPractice.Logic.Common;
+using DDDInPractice.Logic.SharedKernel;
 
-namespace SnackMachine.Logic
+namespace DDDInPractice.Logic.SnackMachine
 {
     public class SnackMachine : AggregateRoot
     {
@@ -14,7 +15,7 @@ namespace SnackMachine.Logic
         public SnackMachine()
         {
             MoneyInTransaction = 0;
-            MoneyInside = None;
+            MoneyInside = Money.None;
 
             Slots = new List<Slot>
             {
@@ -43,7 +44,7 @@ namespace SnackMachine.Logic
 
         public virtual void InsertMoney(Money money)
         {
-            Money[] coinsAndNotes = {Cent, TenCent, QuarterCent, Dollar, FiveDollar, TwentyDollar};
+            Money[] coinsAndNotes = {Money.Cent, Money.TenCent, Money.QuarterCent, Money.Dollar, Money.FiveDollar, Money.TwentyDollar};
             if (!coinsAndNotes.Contains(money))
             {
                 throw new InvalidOperationException();
