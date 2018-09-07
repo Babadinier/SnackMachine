@@ -67,5 +67,7 @@
     <Build Include="dbo\Tables\Ids.sql" />
     <Build Include="dbo\Tables\Snack.sql" />
     <Build Include="dbo\Tables\Slot.sql" />
+    <Build Include="dbo\Tables\HeadOffice.sql" />
+    <Build Include="dbo\Tables\Atm.sql" />
   </ItemGroup>
 </Project>

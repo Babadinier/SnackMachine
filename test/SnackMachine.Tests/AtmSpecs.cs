@@ -1,4 +1,8 @@
-﻿using DDDInPractice.Logic.Atms;
+﻿using System.Configuration;
+using System.Linq;
+using DDDInPractice.Logic.Atms;
+using DDDInPractice.Logic.Common;
+using DDDInPractice.Logic.Utils;
 using FluentAssertions;
 using Xunit;
 using static DDDInPractice.Logic.SharedKernel.Money;
@@ -39,6 +43,19 @@ namespace DDDInPractice.Tests
             atm.TakeMoney(1.1m);
 
             atm.MoneyCharged.Should().Be(1.12m);
+        }
+
+        [Fact]
+        public void Take_money_raises_an_event()
+        {
+            var atm = new Atm();
+            atm.LoadMoney(Dollar);
+
+            atm.TakeMoney(1m);
+
+            var balanceChangedEvent = (BalanceChangedEvent)atm.DomainEvents.SingleOrDefault(x => x.GetType() == typeof(BalanceChangedEvent));
+            balanceChangedEvent.Should().NotBeNull();
+            balanceChangedEvent?.Delta.Should().Be(1.01m);
         }
     }
 }
