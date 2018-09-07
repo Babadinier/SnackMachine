@@ -1,6 +1,6 @@
 ﻿using DDDInPractice.Logic.Common;
 
-namespace DDDInPractice.Logic.SnackMachine
+namespace DDDInPractice.Logic.SnackMachines
 {
     public class Snack : AggregateRoot
     {

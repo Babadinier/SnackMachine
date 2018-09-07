@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Media;
-using DDDInPractice.Logic.SnackMachine;
+using DDDInPractice.Logic.SnackMachines;
 
 namespace DDDInPractice.UI.SnackMachine
 {

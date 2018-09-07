@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 using DDDInPractice.Logic.Management;
-using DDDInPractice.Logic.SnackMachine;
+using DDDInPractice.Logic.SnackMachines;
 using DDDInPractice.Logic.Utils;
 using FluentAssertions;
 using Xunit;

@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Atms\Atm.cs" />
+    <Compile Include="Atms\AtmDto.cs" />
     <Compile Include="Atms\AtmMap.cs" />
     <Compile Include="Atms\AtmRepository.cs" />
     <Compile Include="Atms\BalanceChangedEvent.cs" />
@@ -80,20 +81,21 @@
     <Compile Include="Management\HeadOfficeInstance.cs" />
     <Compile Include="Management\HeadOfficeMap.cs" />
     <Compile Include="Management\HeadOfficeRepository.cs" />
+    <Compile Include="SnackMachines\SnackMachineDto.cs" />
     <Compile Include="Utils\EventListener.cs" />
     <Compile Include="Utils\Initer.cs" />
     <Compile Include="SharedKernel\Money.cs" />
     <Compile Include="Common\Repository.cs" />
     <Compile Include="Utils\SessionFactory.cs" />
-    <Compile Include="SnackMachine\Slot.cs" />
-    <Compile Include="SnackMachine\SlotMap.cs" />
-    <Compile Include="SnackMachine\Snack.cs" />
-    <Compile Include="SnackMachine\SnackMachine.cs" />
+    <Compile Include="SnackMachines\Slot.cs" />
+    <Compile Include="SnackMachines\SlotMap.cs" />
+    <Compile Include="SnackMachines\Snack.cs" />
+    <Compile Include="SnackMachines\SnackMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SnackMachine\SnackMachineMap.cs" />
-    <Compile Include="SnackMachine\SnackMachineRepository.cs" />
-    <Compile Include="SnackMachine\SnackMap.cs" />
-    <Compile Include="SnackMachine\SnackPile.cs" />
+    <Compile Include="SnackMachines\SnackMachineMap.cs" />
+    <Compile Include="SnackMachines\SnackMachineRepository.cs" />
+    <Compile Include="SnackMachines\SnackMap.cs" />
+    <Compile Include="SnackMachines\SnackPile.cs" />
     <Compile Include="Common\ValueObject.cs" />
   </ItemGroup>
   <ItemGroup>

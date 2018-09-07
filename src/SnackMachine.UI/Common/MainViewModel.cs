@@ -1,23 +1,15 @@
-﻿using DDDInPractice.Logic.Atms;
-using DDDInPractice.Logic.SnackMachine;
-using DDDInPractice.UI.Atms;
+﻿using DddInPractice.UI.Management;
 
 namespace DDDInPractice.UI.Common
 {
     public class MainViewModel : ViewModel
     {
-        private readonly SnackMachineRepository _snackMachineRepository;
-        private readonly AtmRepository _atmRepository;
+        public DashboardViewModel Dashboard { get; private set; }
 
         public MainViewModel()
         {
-            //_snackMachineRepository = new SnackMachineRepository();;
-            //var snackMachine = _snackMachineRepository.GetById(1);
-            //var viewModel = new SnackMachineViewModel(snackMachine);
-            _atmRepository = new AtmRepository();
-            var atm = _atmRepository.GetById(1);
-            var viewModel = new AtmViewModel(atm);
-            _dialogService.ShowDialog(viewModel);
+            Dashboard = new DashboardViewModel();
+            _dialogService.ShowDialog(Dashboard);
         }
     }
 }

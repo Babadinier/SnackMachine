@@ -1,6 +1,6 @@
 ﻿using FluentNHibernate.Mapping;
 
-namespace DDDInPractice.Logic.SnackMachine
+namespace DDDInPractice.Logic.SnackMachines
 {
     public class SnackMap : ClassMap<Snack>
     {

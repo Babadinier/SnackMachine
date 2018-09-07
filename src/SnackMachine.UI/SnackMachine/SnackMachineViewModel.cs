@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using DDDInPractice.Logic.SharedKernel;
-using DDDInPractice.Logic.SnackMachine;
+using DDDInPractice.Logic.SnackMachines;
 using DDDInPractice.UI.Common;
-using SnackMachineLogic = DDDInPractice.Logic.SnackMachine.SnackMachine;
 
 namespace DDDInPractice.UI.SnackMachine
 {
     public class SnackMachineViewModel : ViewModel
     {
-        private readonly SnackMachineLogic _snackMachine;
+        private readonly Logic.SnackMachines.SnackMachine _snackMachine;
         public string MoneyInTransaction => _snackMachine.MoneyInTransaction.ToString();
         public Money MoneyInside => _snackMachine.MoneyInside;
         private readonly SnackMachineRepository _repository;
@@ -38,7 +37,7 @@ namespace DDDInPractice.UI.SnackMachine
         public Command ReturnMoneyCommand { get; private set; }
         public Command<string> BuySnackCommand { get; private set; }
 
-        public SnackMachineViewModel(SnackMachineLogic snackMachine)
+        public SnackMachineViewModel(Logic.SnackMachines.SnackMachine snackMachine)
         {
             _snackMachine = snackMachine;
             _repository = new SnackMachineRepository();

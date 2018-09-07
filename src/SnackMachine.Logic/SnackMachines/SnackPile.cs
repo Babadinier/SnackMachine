@@ -1,7 +1,7 @@
 ﻿using System;
 using DDDInPractice.Logic.Common;
 
-namespace DDDInPractice.Logic.SnackMachine
+namespace DDDInPractice.Logic.SnackMachines
 {
     public sealed class SnackPile : ValueObject<SnackPile>
     {
